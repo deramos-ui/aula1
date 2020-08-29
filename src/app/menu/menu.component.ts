@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-
+  cont:number;
+  text:string;
   constructor() { }
 
   ngOnInit(): void {
+    this.cont = 0;
+    this.text = 'ola mundo';
+  }
+
+  clicou(){
+    this.cont++;
+    this.text = 'clicou ' + this.cont;
   }
 
 }
